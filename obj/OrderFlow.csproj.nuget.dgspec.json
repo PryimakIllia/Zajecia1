@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\Documents\\OrderFlow\\OrderFlow.csproj": {}
+    "C:\\Users\\Student\\Downloads\\Zajecia1-main\\Zajecia1-main\\OrderFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\Documents\\OrderFlow\\OrderFlow.csproj": {
+    "C:\\Users\\Student\\Downloads\\Zajecia1-main\\Zajecia1-main\\OrderFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\Documents\\OrderFlow\\OrderFlow.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Downloads\\Zajecia1-main\\Zajecia1-main\\OrderFlow.csproj",
         "projectName": "OrderFlow",
-        "projectPath": "C:\\Users\\Student\\Documents\\OrderFlow\\OrderFlow.csproj",
+        "projectPath": "C:\\Users\\Student\\Downloads\\Zajecia1-main\\Zajecia1-main\\OrderFlow.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\Documents\\OrderFlow\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Downloads\\Zajecia1-main\\Zajecia1-main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
