@@ -245,4 +245,81 @@ Console.WriteLine("\n-- Thread-safe version --");
 Console.WriteLine($"Processed: {safeStats.TotalProcessed}, Revenue: {safeStats.TotalRevenue}");
 foreach (var kv in safeStats.OrdersPerStatus)
     Console.WriteLine($"{kv.Key}: {kv.Value}");
-Console.WriteLine($"Errors: {string.Join(", ", safeStats.ProcessingErrors)}");
+Console.WriteLine($"Errors: {string.Join(", ", safeStats.ProcessingErrors)}");  
+
+// ===== Repository (JSON/XML) =====
+var repository = new OrderRepository();
+
+var jsonPath = "data/orders.json";
+var xmlPath = "data/orders.xml";
+
+Console.WriteLine("\n=== REPOSITORY TEST (JSON/XML) ===");
+
+// SAVE
+await repository.SaveToJsonAsync(SampleData.Orders, jsonPath);
+await repository.SaveToXmlAsync(SampleData.Orders, xmlPath);
+
+Console.WriteLine("Saved to JSON and XML");
+
+// "очищаємо пам’ять"
+var emptyList = new List<Order>();
+
+// LOAD
+var loadedJson = await repository.LoadFromJsonAsync(jsonPath);
+var loadedXml = await repository.LoadFromXmlAsync(xmlPath);
+
+// COMPARE
+Console.WriteLine("\n--- JSON ---");
+Console.WriteLine($"Count: {loadedJson.Count}");
+Console.WriteLine($"Total sum: {loadedJson.Sum(o => o.TotalAmount)}");
+
+Console.WriteLine("\n--- XML ---");
+Console.WriteLine($"Count: {loadedXml.Count}");
+Console.WriteLine($"Total sum: {loadedXml.Sum(o => o.TotalAmount)}");
+
+// ===== XML Report (LINQ to XML) =====
+var reportBuilder = new XmlReportBuilder();
+
+var report = reportBuilder.BuildReport(SampleData.Orders);
+
+var reportPath = "data/report.xml";
+
+await reportBuilder.SaveReportAsync(report, reportPath);
+
+Console.WriteLine("\n=== XML REPORT GENERATED ===");
+Console.WriteLine($"Saved to {reportPath}");
+
+// Query from XML
+var highValueIds = await reportBuilder.FindHighValueOrderIdsAsync(reportPath, 1000m);
+
+Console.WriteLine("\n=== High value orders from XML (>1000) ===");
+foreach (var id in highValueIds)
+{
+    Console.WriteLine($"Order ID: {id}");
+}
+
+// ===== Inbox Watcher =====
+Console.WriteLine("\n=== INBOX WATCHER DEMO ===");
+
+var inboxPath = "inbox";
+
+using var watcher = new InboxWatcher(inboxPath, pipeline);
+
+// demo 
+var repo = new OrderRepository();
+
+for (int i = 1; i <= 3; i++)
+{
+    var testOrders = SampleData.Orders.Take(2).ToList();
+
+    var filePath = Path.Combine(inboxPath, $"orders_{i}.json");
+
+    await repo.SaveToJsonAsync(testOrders, filePath);
+
+    Console.WriteLine($"[DEMO] Created test file: {filePath}");
+
+    await Task.Delay(3000);
+}
+
+Console.WriteLine("Press any key to exit...");
+Console.ReadKey();
