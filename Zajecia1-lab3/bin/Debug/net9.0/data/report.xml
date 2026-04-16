@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report generated="2026-04-16T17:42:04.5390767+02:00">
+  <summary totalOrders="6" totalRevenue="7549" />
+  <byStatus>
+    <status name="Validated" count="6" revenue="7549" />
+  </byStatus>
+  <byCustomer>
+    <customer id="1" name="Jan Kowalski" isVip="false">
+      <orderCount>2</orderCount>
+      <totalSpent>4699</totalSpent>
+      <orders>
+        <orderRef id="1" total="1999" />
+        <orderRef id="6" total="2700" />
+      </orders>
+    </customer>
+    <customer id="2" name="Anna Nowak" isVip="true">
+      <orderCount>2</orderCount>
+      <totalSpent>2000</totalSpent>
+      <orders>
+        <orderRef id="2" total="1200" />
+        <orderRef id="4" total="800" />
+      </orders>
+    </customer>
+    <customer id="3" name="Piotr Zielinski" isVip="false">
+      <orderCount>1</orderCount>
+      <totalSpent>600</totalSpent>
+      <orders>
+        <orderRef id="3" total="600" />
+      </orders>
+    </customer>
+    <customer id="4" name="Ola Wisniewska" isVip="false">
+      <orderCount>1</orderCount>
+      <totalSpent>250</totalSpent>
+      <orders>
+        <orderRef id="5" total="250" />
+      </orders>
+    </customer>
+  </byCustomer>
+</report>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Order>
+    <Id>1</Id>
+    <Customer>
+      <Id>1</Id>
+      <FullName>Jan Kowalski</FullName>
+      <IsVip>false</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>1</Id>
+          <Name>Shure SM7B</Name>
+          <Price>1899</Price>
+          <Category>Audio</Category>
+        </Product>
+        <Quantity>1</Quantity>
+      </OrderItem>
+      <OrderItem>
+        <Product>
+          <Id>2</Id>
+          <Name>Kabel XLR</Name>
+          <Price>50</Price>
+          <Category>Audio</Category>
+        </Product>
+        <Quantity>2</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+  <Order>
+    <Id>2</Id>
+    <Customer>
+      <Id>2</Id>
+      <FullName>Anna Nowak</FullName>
+      <IsVip>true</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>3</Id>
+          <Name>Monitor 27"</Name>
+          <Price>1200</Price>
+          <Category>Electronics</Category>
+        </Product>
+        <Quantity>1</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+  <Order>
+    <Id>3</Id>
+    <Customer>
+      <Id>3</Id>
+      <FullName>Piotr Zielinski</FullName>
+      <IsVip>false</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>4</Id>
+          <Name>Klawiatura mechaniczna</Name>
+          <Price>300</Price>
+          <Category>Electronics</Category>
+        </Product>
+        <Quantity>2</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+  <Order>
+    <Id>4</Id>
+    <Customer>
+      <Id>2</Id>
+      <FullName>Anna Nowak</FullName>
+      <IsVip>true</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>5</Id>
+          <Name>Biurko</Name>
+          <Price>800</Price>
+          <Category>Furniture</Category>
+        </Product>
+        <Quantity>1</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+  <Order>
+    <Id>5</Id>
+    <Customer>
+      <Id>4</Id>
+      <FullName>Ola Wisniewska</FullName>
+      <IsVip>false</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>2</Id>
+          <Name>Kabel XLR</Name>
+          <Price>50</Price>
+          <Category>Audio</Category>
+        </Product>
+        <Quantity>5</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+  <Order>
+    <Id>6</Id>
+    <Customer>
+      <Id>1</Id>
+      <FullName>Jan Kowalski</FullName>
+      <IsVip>false</IsVip>
+    </Customer>
+    <Items>
+      <OrderItem>
+        <Product>
+          <Id>3</Id>
+          <Name>Monitor 27"</Name>
+          <Price>1200</Price>
+          <Category>Electronics</Category>
+        </Product>
+        <Quantity>2</Quantity>
+      </OrderItem>
+      <OrderItem>
+        <Product>
+          <Id>4</Id>
+          <Name>Klawiatura mechaniczna</Name>
+          <Price>300</Price>
+          <Category>Electronics</Category>
+        </Product>
+        <Quantity>1</Quantity>
+      </OrderItem>
+    </Items>
+    <Status>Validated</Status>
+    <InternalNote>SECRET</InternalNote>
+  </Order>
+</ArrayOfOrder>

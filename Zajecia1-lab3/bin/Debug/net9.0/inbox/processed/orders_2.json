@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "customer": {
+      "id": 1,
+      "fullName": "Jan Kowalski",
+      "isVip": false
+    },
+    "items": [
+      {
+        "product": {
+          "id": 1,
+          "name": "Shure SM7B",
+          "price": 1899,
+          "category": "Audio"
+        },
+        "quantity": 1,
+        "totalPrice": 1899
+      },
+      {
+        "product": {
+          "id": 2,
+          "name": "Kabel XLR",
+          "price": 50,
+          "category": "Audio"
+        },
+        "quantity": 2,
+        "totalPrice": 100
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 1999
+  },
+  {
+    "id": 2,
+    "customer": {
+      "id": 2,
+      "fullName": "Anna Nowak",
+      "isVip": true
+    },
+    "items": [
+      {
+        "product": {
+          "id": 3,
+          "name": "Monitor 27\"",
+          "price": 1200,
+          "category": "Electronics"
+        },
+        "quantity": 1,
+        "totalPrice": 1200
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 1200
+  }
+]

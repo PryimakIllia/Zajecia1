@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "customer": {
+      "id": 1,
+      "fullName": "Jan Kowalski",
+      "isVip": false
+    },
+    "items": [
+      {
+        "product": {
+          "id": 1,
+          "name": "Shure SM7B",
+          "price": 1899,
+          "category": "Audio"
+        },
+        "quantity": 1,
+        "totalPrice": 1899
+      },
+      {
+        "product": {
+          "id": 2,
+          "name": "Kabel XLR",
+          "price": 50,
+          "category": "Audio"
+        },
+        "quantity": 2,
+        "totalPrice": 100
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 1999
+  },
+  {
+    "id": 2,
+    "customer": {
+      "id": 2,
+      "fullName": "Anna Nowak",
+      "isVip": true
+    },
+    "items": [
+      {
+        "product": {
+          "id": 3,
+          "name": "Monitor 27\"",
+          "price": 1200,
+          "category": "Electronics"
+        },
+        "quantity": 1,
+        "totalPrice": 1200
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 1200
+  },
+  {
+    "id": 3,
+    "customer": {
+      "id": 3,
+      "fullName": "Piotr Zielinski",
+      "isVip": false
+    },
+    "items": [
+      {
+        "product": {
+          "id": 4,
+          "name": "Klawiatura mechaniczna",
+          "price": 300,
+          "category": "Electronics"
+        },
+        "quantity": 2,
+        "totalPrice": 600
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 600
+  },
+  {
+    "id": 4,
+    "customer": {
+      "id": 2,
+      "fullName": "Anna Nowak",
+      "isVip": true
+    },
+    "items": [
+      {
+        "product": {
+          "id": 5,
+          "name": "Biurko",
+          "price": 800,
+          "category": "Furniture"
+        },
+        "quantity": 1,
+        "totalPrice": 800
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 800
+  },
+  {
+    "id": 5,
+    "customer": {
+      "id": 4,
+      "fullName": "Ola Wisniewska",
+      "isVip": false
+    },
+    "items": [
+      {
+        "product": {
+          "id": 2,
+          "name": "Kabel XLR",
+          "price": 50,
+          "category": "Audio"
+        },
+        "quantity": 5,
+        "totalPrice": 250
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 250
+  },
+  {
+    "id": 6,
+    "customer": {
+      "id": 1,
+      "fullName": "Jan Kowalski",
+      "isVip": false
+    },
+    "items": [
+      {
+        "product": {
+          "id": 3,
+          "name": "Monitor 27\"",
+          "price": 1200,
+          "category": "Electronics"
+        },
+        "quantity": 2,
+        "totalPrice": 2400
+      },
+      {
+        "product": {
+          "id": 4,
+          "name": "Klawiatura mechaniczna",
+          "price": 300,
+          "category": "Electronics"
+        },
+        "quantity": 1,
+        "totalPrice": 300
+      }
+    ],
+    "status": 1,
+    "internalNote": "SECRET",
+    "totalAmount": 2700
+  }
+]
